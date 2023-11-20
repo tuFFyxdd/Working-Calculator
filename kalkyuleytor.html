@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="web-logo.png" type="image">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="logo">
+                <img src="casio-logo.png" alt="CASIO Logo">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input class="placeholderfont" type="text" id="result" placeholder="8 8 8 8 8 8 8 8 8 8 8 8 8 ">
+            </td>
+            <td class="buttons" colspan="1">
+                <input id="ibangkulay" type="button" onclick="clearLast()" value="C">
+            </td>
+            <td class="buttons">
+                <input id="allclearkulay" type="button" onclick="clearinput()" value="AC">
+                <div class="model"> QuantumCalc QX-9000</div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="buttons"><input type="button" onclick="divide()" value="÷" id="operatorskulay"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(1)" value="1"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(2)" value="2"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(3)" value="3"></td>
+        </tr>
+        <tr>
+            <td class="buttons"><input type="button" onclick="multiply()" value="×" id="operatorskulay"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(4)" value="4"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(5)" value="5"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(6)" value="6"></td>
+
+        </tr>
+        <tr>
+            <td class="buttons"><input type="button" onclick="minus()" value="−" id="operatorskulay"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(7)" value="7"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(8)" value="8"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(9)" value="9"></td>
+
+        </tr>
+        <tr>
+            <td class="buttons"><input type="button" onclick="add()" value="＋" id="operatorskulay"></td>
+            <td class="buttons"><input type="button" onclick="appendNumber('.')" value="."></td>
+            <td class="buttons"><input type="button" onclick="appendNumber(0)" value="0"></td>
+            <td class="buttons"><input type="button" onclick="calculate()" value="=" id="ibangkulay"></td>
+        </tr>
+
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
